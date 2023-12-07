@@ -1,0 +1,65 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<style>  
+body {  
+  display: flex;  
+  justify-content: center;  
+  align-items: center;  
+  height: 100vh;  
+  background-image: url("111.jpg");  
+  background-repeat: no-repeat;  
+  background-size: cover;  
+}  
+  
+#myLink, #youlink, #myLink2 {  
+  font-size: 50px; /* 修改此值以调整字体大小 */  
+  text-align: center;    
+  text-decoration: none;  
+  cursor: pointer;  
+}  
+</style>  
+</head>  
+<body>  
+  
+    <a href="#" id="myLink">I want gifts~~</a>    
+    <a href="#" id="youlink" style="display: none;">心急吃不了热豆腐哦๑ᵒᯅᵒ๑</a>  
+    <a href="#" id="myLink2" style="display: none;">别打我真的给你！！！(˚ ˃̣̣̥᷄⌓˂̣̣̥᷅ )</a>
+      
+    <script>  
+        document.getElementById('myLink').addEventListener('click', function(event) {  
+          event.preventDefault();  
+          this.style.display = 'none'; // 隐藏第一个链接  
+          document.getElementById('youlink').style.display = 'inline'; // 显示第二个链接  
+          setTimeout(function() {  
+            document.getElementById('youlink').style.display = 'none'; // 隐藏第二个链接  
+            document.getElementById('myLink2').style.display = 'inline'; // 显示第三个链接  
+          }, 10000); // 设置延迟时间为2秒，根据需要可以调整  
+        });  
+        </script>  
+<script>  
+document.getElementById('myLink').addEventListener('click', function(event) {  
+  alert('哒咩~中国人不过洋节');  
+  event.preventDefault();  
+});  
+</script>  
+<script>  
+    document.getElementById('youlink').addEventListener('click', function(event) {  
+      event.preventDefault();  
+      var input = prompt("输入你想要的礼物名字：", "");  
+      if (input != null) {  
+        alert("真可爱~喜欢做白日梦！！！");  
+      }  
+    });  
+    </script>  
+    <script>  
+        document.getElementById('myLink2').addEventListener('click', function(event) {  
+          event.preventDefault();  
+          // 在这里添加你想要执行的代码，比如打开一个新的链接：  
+          window.open('https://www.bilibili.com/video/BV1GJ411x7h7/?spm_id_from=333.880.my_history.page.click&vd_source=9c4f6a1d0f517fb36bf1afa14aac158e', '_blank');  
+        });  
+        </script>  
+  
+ 
+</body>  
+</html>
