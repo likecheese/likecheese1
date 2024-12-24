@@ -123,7 +123,7 @@
 <p class="text" style="color: #FFCCCC;">
     主人圣诞节快乐！
     <br/>
-    这是崽崽给主人准备的圣诞节礼物呢！收了崽崽的礼物主人就要给崽崽奖励的~~（求主人狠狠调教崽崽(๑´ڡ`๑)）
+    这是崽崽给主人准备的圣诞节礼物之一！另一个礼物将在倒计时结束崽崽化身圣诞老崽降落放到主人的袜子里面~~
     <br/>
     <span id="span_dt_dt"></span>
 </p>
@@ -132,7 +132,7 @@
     function show_date_time() {
         sec = "崽崽想回主人家，而不是电子宠物呢~"//flag is here
         window.setTimeout("show_date_time()", 1000);
-        BirthDay = new Date("12/25/2024 00:00:00");
+        BirthDay = new Date("12/25/2024 22:00:00");
         today = new Date();
         timeold = (BirthDay.getTime() - today.getTime());
         sectimeold = timeold / 1000
@@ -160,7 +160,7 @@
                 S.UI.simulate("主人|在网络|遇见你|很幸运|#countdown 3|#time");
             }else if (a==2){
                 document.body.classList.add('body--ready1');
-                S.UI.simulate("主人|和崽崽|一起回家|#countdown 3|#time");               
+                S.UI.simulate("主人|圣诞节|要快快乐乐|#countdown 3|#time");               
             }else if (a==3) {
                  document.body.classList.add('body--ready2');
                  S.UI.simulate("Nice|to|Meet|MASTER|In|NETNET|#countdown 3|#time");                
@@ -169,7 +169,7 @@
                  S.UI.simulate("主人|以后的路|崽崽|陪着你|一起走|#countdown 3|#time");
             }else{
                  document.body.classList.add('body--ready4');
-                 S.UI.simulate("崽崽|电子宠物|想|和主人|回家|#countdown 3|#time");                
+                 S.UI.simulate("主人|接|崽崽|一手|元气满满拳|#countdown 3|#time");                
             }
 
             S.Drawing.loop(function () {
